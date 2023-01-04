@@ -11,7 +11,6 @@ function selection_sort(arr) {
   return arr;
 }
 
-const num = [11, 56, 23, 6, 24, 23, 78, 3, 1];
+const num = require("./data/10000.json");
 
-const result = selection_sort(num);
-console.log(result);
+console.log(selection_sort(num));
