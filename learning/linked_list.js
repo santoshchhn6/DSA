@@ -128,6 +128,20 @@ class LinkedList {
     return null;
   }
 
+  node_at_index(index) {
+    if (index === 0) return this.head;
+    else {
+      let current = this.head;
+      let position = 0;
+
+      while (position < index) {
+        current = current.next;
+        position++;
+      }
+      return current;
+    }
+  }
+
   printList() {
     /*
     String representation of list node
@@ -148,11 +162,13 @@ class LinkedList {
   }
 }
 
-const l = new LinkedList();
-l.add(34);
-l.add(16);
-l.add(45);
-l.add(8);
-console.log(l.printList());
-l.insert(23, 2);
-console.log(l.printList());
+module.exports = LinkedList;
+
+// const l = new LinkedList();
+// l.add(34);
+// l.add(16);
+// l.add(45);
+// l.add(8);
+// l.printList();
+// l.insert(23, 2);
+// l.printList();
