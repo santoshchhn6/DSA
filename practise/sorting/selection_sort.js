@@ -11,6 +11,6 @@ function selection_sort(arr) {
   return arr;
 }
 
-const num = require("./data/10000.json");
+const num = require("../data/10000.json");
 
 console.log(selection_sort(num));
