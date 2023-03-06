@@ -1,4 +1,4 @@
-const LinkedList = require("./linked_list");
+const LinkedList = require("../linklist/linked_list");
 
 function merge_sort(linked_list) {
   /*

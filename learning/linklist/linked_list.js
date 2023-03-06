@@ -142,6 +142,20 @@ class LinkedList {
     }
   }
 
+  reverse() {
+    let prev = null;
+    let current = this.head;
+    let next = null;
+
+    while (current !== null) {
+      next = current.next;
+      current.next = prev;
+      prev = current;
+      current = next;
+    }
+    this.head = prev;
+  }
+
   printList() {
     /*
     String representation of list node
@@ -164,11 +178,11 @@ class LinkedList {
 
 module.exports = LinkedList;
 
-// const l = new LinkedList();
-// l.add(34);
-// l.add(16);
-// l.add(45);
-// l.add(8);
-// l.printList();
-// l.insert(23, 2);
-// l.printList();
+const l = new LinkedList();
+l.add(34);
+l.add(16);
+l.add(45);
+l.add(8);
+console.log(l.printList());
+l.reverse();
+console.log(l.printList());

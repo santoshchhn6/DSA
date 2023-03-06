@@ -1,4 +1,4 @@
-const shuffle = require("./suffle_array");
+const shuffle = require("../array/suffle_array");
 
 function is_sorted(list) {
   for (let i = 0; i < list.length; i++) {

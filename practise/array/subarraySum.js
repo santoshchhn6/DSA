@@ -30,6 +30,7 @@ class Solution {
     return [-1];
   }
 }
+
 const s = new Solution();
-const r = s.subarraySum([1, 2, 3, 4], 4, 0);
+const r = s.subarraySum([2, 7, 11, 15], 4, 13);
 console.log(r);
